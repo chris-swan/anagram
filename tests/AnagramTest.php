@@ -5,7 +5,7 @@
     {
         function test_findAnagram_oneLetter()
         {
-          //Arrage
+          //Arrange
           $test_Anagram = new Anagram;
           $input = "a";
 
@@ -14,6 +14,19 @@
 
           //Assert
           $this->assertEquals("a", $result);
+        }
+
+        function test_findAnagram_ucLetter()
+        {
+            //Arrange
+            $test_Anagram = new Anagram;
+            $input = "A";
+
+            //Act
+            $result = $test_Anagram->findAnagram($input);
+
+            //Assert
+            $this->assertEquals("a", $result);
         }
     }
  ?>
