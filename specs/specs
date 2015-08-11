@@ -1,6 +1,7 @@
 Plain language specs              input               output
 
 1)match one letter word              a                   ['a']
+2)match with upper case letter       A                   ['a']
 2)match two letter word              as                  ['as']
 3)match word with list               sat                 ['sta', 'sat', 'tas']
 4)match partial                      "as"                ['sta', 'sat', 'tas']

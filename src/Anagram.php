@@ -1,9 +1,9 @@
 <?php
     class Anagram
     {
-        function findAnagram($input_word)
+        function findAnagram($input)
         {
-          
+            return($input);
         }
     }
 ?>
