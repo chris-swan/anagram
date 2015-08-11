@@ -43,9 +43,20 @@
 
           //Assert
           $this->assertEquals("sat, sta, tas", $result);
+        }
 
+        function test_findAnagram_matchWordWithList()
+        {
+          //Arrange
+          $test_Anagram = new Anagram;
+          $word = "sat";
+          $test = "sat, sta, tas, abc, fun, sit";
 
+          //Act
+          $result = $test_Anagram->findAnagram($word, $test);
 
+          //Assert
+          $this->assertEquals("sat, sta, tas");
         }
 
 
