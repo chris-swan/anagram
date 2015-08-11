@@ -3,7 +3,8 @@
     {
         function findAnagram($input)
         {
-            return($input);
+            $output = strtolower($input);
+            return($output);
         }
     }
 ?>
