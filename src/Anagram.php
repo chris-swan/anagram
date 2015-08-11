@@ -1,10 +1,14 @@
 <?php
     class Anagram
     {
-        function findAnagram($input)
-        {
-            $output = strtolower($input);
-            return($output);
-        }
+       function findAnagram($word, $test)
+       {
+         $word_list = $test;
+         $user_word = $word;
+           if ($user_word == $word_list) {
+
+               return ($test);
+          }
     }
+  }
 ?>

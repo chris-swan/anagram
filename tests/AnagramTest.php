@@ -7,26 +7,27 @@
         {
           //Arrange
           $test_Anagram = new Anagram;
-          $input = "a";
+          $word = "a";
+          $test = "a";
 
           //Act
-          $result = $test_Anagram->findAnagram($input);
+          $result = $test_Anagram->findAnagram($word, $test);
 
           //Assert
           $this->assertEquals("a", $result);
         }
-
-        function test_findAnagram_ucLetter()
-        {
-            //Arrange
-            $test_Anagram = new Anagram;
-            $input = "A";
-
-            //Act
-            $result = $test_Anagram->findAnagram($input);
-
-            //Assert
-            $this->assertEquals("a", $result);
-        }
+        //
+        // function test_findAnagram_ucLetter()
+        // {
+        //     //Arrange
+        //     $test_Anagram = new Anagram;
+        //     $input = "A";
+        //
+        //     //Act
+        //     $result = $test_Anagram->findAnagram($input);
+        //
+        //     //Assert
+        //     $this->assertEquals("a", $result);
+        // }
     }
  ?>
